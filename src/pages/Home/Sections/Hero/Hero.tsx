@@ -21,29 +21,33 @@ const Hero = () => {
     return (
       <>
         <StyledHero> 
-        <Container sx={{display:"flex"}}>   </Container> 
-        <Grid container spacing={2}>
-          <Grid item xs={12}  md={4} >
-            <StyledImg src={Avatar}/>
-        </Grid>
 
-          <Grid item xs={12} md={8} >
-            <Typography color="primary" variant="h1"  textAlign="center" >Bruna Padilha Borba</Typography>
-            <Typography color="primary"  variant="h2" textAlign="center" >Frontend Developer - UX Designer </Typography>
+          <Container sx={{display:"flex"}}>  
+            <Grid container spacing={2}>
+              <Grid item xs={12}  md={4} >
+                <StyledImg src={Avatar}/>
             </Grid>
-          </Grid>
-    
-      <Grid container>  
-        <Grid  xs={12}  md={6} display="flex"  justifyContent="center" item>        
-          <button><EmailIcon color="primary" textAlign="center"  ></EmailIcon>Contact me</button> 
-        </Grid>
 
-       <Grid xs={12} md={6} display="flex"  justifyContent="center" item>       
-          <button> <SimCardDownloadIcon color="primary" textAlign="center" ></SimCardDownloadIcon> Download CV </button> 
-        </Grid>
-      </Grid>
+            <Grid item xs={12} md={8} >
+                <Typography color="primary" variant="h1"  textAlign="center" >Bruna Borba</Typography>
+                <Typography color="primary"  variant="h2" textAlign="center" >Frontend Developer - UX Designer </Typography>
+              <Grid container>  
+              <Grid item xs={12} md={6} display={"flex"} justifyContent={"center"}> 
+                <button>
+                  <EmailIcon color="primary"></EmailIcon>Contact me
+                  </button> 
+              </Grid>
+                
+              <Grid item xs={12} md={6} display={"flex"} justifyContent={"center"} > 
+                <button> <SimCardDownloadIcon color="primary" ></SimCardDownloadIcon> Download CV 
+                </button> 
+              </Grid>  
+            </Grid>
+            </Grid>
+            </Grid>
 
-      
+
+         </Container> 
         </StyledHero>
       </>
     );
