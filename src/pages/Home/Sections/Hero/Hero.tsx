@@ -43,8 +43,8 @@ const Hero = () => {
                             </Box>
                         </Grid>
                         <Grid item xs={12} md={7}>
-                            <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={2}>Adriana Saty</Typography>
-                            <Typography color="primary.contrastText" variant="h2" textAlign="center" >I'm a Software Engineer</Typography>
+                            <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={2}>Bruna Borba</Typography>
+                            <Typography color="primary.contrastText" variant="h2" textAlign="center" >I'm a Front End Developer + UX Designer</Typography>
                             <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
                                     <StyledButton>
