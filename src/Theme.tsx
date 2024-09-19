@@ -1,16 +1,21 @@
-import { createTheme } from '@mui/material/styles';
-import { blue, green, purple } from '@mui/material/colors';
+import { createTheme, responsiveFontSizes } from "@mui/material";
 
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#242424', 
+let theme = createTheme({
+    palette: {
+        primary: {
+            main: '#232323',
+        },
+        secondary: {
+            main: '#4f8e3e',
+        },
     },
-    secondary: {
-      main: blue[500],
-    },
-  },
+    typography: {
+        fontFamily: [
+            '"Helvetica Neue"',
+        ].join(','),
+    }
 });
 
+theme = responsiveFontSizes(theme);
 
-import _default from Theme; 
+export default theme;
